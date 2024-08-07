@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+  batch:
+    # by keeping false when application started job wont run when we trigger only it will run
+    datasource:
+      url: jdbc:mysql://localhost:3306/batch
+      username: root
+      password: Nag@6508
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update
